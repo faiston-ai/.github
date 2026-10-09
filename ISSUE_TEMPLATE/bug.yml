@@ -1,0 +1,45 @@
+name: 🐞 Bug
+description: Algo que funcionava (ou deveria funcionar) e não funciona
+labels: ["tipo: bug", "status: triagem"]
+body:
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que aconteceu
+      description: Descreva o erro. Cole a mensagem exata se tiver.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que era esperado
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Acessar ...
+        2. Clicar em ...
+        3. Ver erro
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Ambiente
+      options:
+        - Produção
+        - Homologação / Validação
+        - Local
+    validations:
+      required: true
+  - type: dropdown
+    id: impacto
+    attributes:
+      label: Impacto
+      options:
+        - Alto — operação parada
+        - Médio — tem contorno manual
+        - Baixo — incômodo
+    validations:
+      required: true

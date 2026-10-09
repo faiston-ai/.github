@@ -1,0 +1,25 @@
+name: ✨ Melhoria / funcionalidade
+description: Nova funcionalidade ou ajuste em um sistema que já existe
+labels: ["tipo: melhoria", "status: triagem"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema isso resolve
+      description: Comece pelo problema, não pela solução.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: Como saberemos que está pronto?
+      placeholder: |
+        - [ ] Usuário consegue ...
+        - [ ] Relatório mostra ...
+    validations:
+      required: true
