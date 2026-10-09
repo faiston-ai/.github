@@ -1,0 +1,29 @@
+name: 📋 Tarefa do projeto
+description: Um pedaço do MVP ou do trabalho técnico deste projeto (vira uma branch e um PR)
+labels: ["tipo: tarefa", "status: pronto pra fazer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues no GitHub são **técnicas**. Pedido de automação, inventário e prioridade ficam no hubfaiston.
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que fazer
+      description: Uma entrega pequena — idealmente um PR de até ~400 linhas.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      placeholder: |
+        - [ ] ...
+        - [ ] Teste cobrindo o caso principal
+    validations:
+      required: true
+  - type: input
+    id: hub
+    attributes:
+      label: Projeto no hubfaiston
+      description: Link do projeto (de onde veio a prioridade)
